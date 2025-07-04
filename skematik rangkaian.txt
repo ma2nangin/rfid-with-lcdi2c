@@ -1,0 +1,24 @@
+/*Panduan & Skematik rangkaian
+   Tujuan:
+   Membaca UID (Unique ID) dari tag RFID/NFC (kartu atau gantungan kunci)
+   menggunakan modul MFRC522 dan menampilkannya di LCD I2C.
+
+   Persyaratan:
+   - Arduino Uno
+   - Modul RFID-RC522
+   - LCD 16x2 atau 20x4 dengan I2C Converter
+   - Library MFRC522 (disarankan "MFRC522 by Udo Klein")
+   - Library LiquidCrystal I2C (disarankan "LiquidCrystal I2C by Frank de Brabander" atau yang kompatibel dengan lcd.begin())
+
+   Koneksi (Wiring) Arduino Uno:
+   --------------------------------------------------------------
+   MFRC522 Pin | Arduino Uno Pin | LCD I2C Pin | Arduino Uno Pin
+   --------------------------------------------------------------
+   SDA (SS)    | D10             | GND         | GND
+   SCK         | D13             | VCC         | 5V
+   MOSI        | D11             | SDA         | A4
+   MISO        | D12             | SCL         | A5
+   GND         | GND             |
+   RST         | D9              |
+   3.3V        | 3.3V            |
+   --------------------------------------------------------------
